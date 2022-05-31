@@ -52,3 +52,17 @@ header h1 {
 .link {
     margin-bottom: 10px;
 }
+
+.description {
+    border: 1px solid;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.description-h3 {
+    text-align: center;
+}
+
+.description-p {
+    margin: 10px;
+}
