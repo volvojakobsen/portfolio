@@ -41,6 +41,14 @@ header h1 {
     align-items: center;
 }
 
+.site h3 {
+    margin: 10px;
+}
+
 .screenshots {
-    max-width: 400px;
+    max-width: 600px;
+}
+
+.link {
+    margin-bottom: 10px;
 }
