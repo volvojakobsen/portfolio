@@ -47,16 +47,22 @@ header h1 {
 
 .screenshots {
     max-width: 600px;
+    width: 100%;
 }
 
 .link {
     margin-bottom: 10px;
 }
 
+
 .description {
     border: 1px solid;
     max-width: 500px;
     margin: 20px;
+}
+
+.links {
+    border: 2px dotted blue;
 }
 
 .description-h3 {
@@ -65,4 +71,26 @@ header h1 {
 
 .description-p {
     margin: 10px;
+}
+
+.description a {
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    background-color: lightgrey;
+}
+
+@media (max-width: 972px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .site {
+        max-width: 90%;
+    }
 }
