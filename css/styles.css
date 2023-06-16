@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Mono:wght@500&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,13 +19,16 @@ main {    flex: 1 1 100%;
 header h1 {
     text-align: center;
     background-color: rgb(19, 19, 19);
+    border: 5px solid greenyellow;
     color: aliceblue;
     margin: 20px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .header-h1 {
     text-align: center;
     margin: 50px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .cards {
@@ -60,6 +65,7 @@ header h1 {
     max-width: 500px;
     width: 90%;
     margin: 20px;
+    font-family: 'Comfortaa', cursive;
 }
 
 
@@ -84,12 +90,16 @@ header h1 {
 
 h2 {
     color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .copyright {
     text-align: center;
     margin-top: 20px;
-    background-color: lightgrey;
+    background-color: rgb(19, 19, 19);
+    border: 5px solid greenyellow;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
 }
 
 @media (max-width: 972px) {
