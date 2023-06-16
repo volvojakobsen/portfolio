@@ -16,7 +16,8 @@ main {    flex: 1 1 100%;
 
 header h1 {
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(19, 19, 19);
+    color: aliceblue;
     margin: 20px;
 }
 
@@ -33,10 +34,9 @@ header h1 {
 
 .site {
     display: flex;
-    background-color: lightgray;
+    background-color: rgb(19, 19, 19);
     max-width: 30%;
-    border: 2px solid;
-    border-radius: 5px;
+    border: 5px solid greenyellow;
     flex-direction: column;
     align-items: center;
 }
@@ -70,14 +70,20 @@ header h1 {
 
 .description-h3 {
     text-align: center;
+    color: aliceblue;
 }
 
 .description-p {
     margin: 10px;
+    color: aliceblue;
 }
 
 .description a {
-    color: black;
+    color: white;
+}
+
+h2 {
+    color: aliceblue;
 }
 
 .copyright {
