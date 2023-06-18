@@ -6,7 +6,7 @@ Andreas Jakobsen's programing portfolio page.
 
 ## Hosted link
 
-![Netlify link](https://effortless-sawine-1a3c4d.netlify.app/)
+https://effortless-sawine-1a3c4d.netlify.app/
 
 ## Description
 
