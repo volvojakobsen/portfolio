@@ -31,6 +31,11 @@ header h1 {
     font-family: 'Roboto Mono', monospace;
 }
 
+.about-header {
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 10px;
+}
+
 .cards {
     display: flex;
     justify-content: center;
@@ -55,10 +60,49 @@ header h1 {
     width: 100%;
 }
 
+.profile-image {
+    max-width: 300px;
+    width: 100%;
+    margin: 80px;
+    object-fit: cover;
+}
+
+.margin {
+    margin: 80px;
+}
+
+.about-topdiv {
+    display: flex;
+}
+
 .link {
     margin-bottom: 10px;
 }
 
+.header-link {
+    text-align: center;   
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-left {
+    margin-right: 20px;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.nav {
+    margin: 10px;
+}
 
 .description {
     border: 1px solid;
@@ -66,6 +110,18 @@ header h1 {
     width: 90%;
     margin: 20px;
     font-family: 'Comfortaa', cursive;
+}
+
+.about-description {
+    font-family: 'Comfortaa', cursive;
+}
+
+.profile-image-div {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -112,4 +168,21 @@ h2 {
     .site {
         max-width: 90%;
     }
+}
+
+@media (max-width: 770px) {
+    .about-topdiv {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 440px) {
+    .profile-image {
+        max-width: 200px;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+
+    
 }
