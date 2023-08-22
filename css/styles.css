@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;  
-}
+    background-image: linear-gradient(to right top, #7900ff, #0065ff, #008eff, #00acff, #00c5ff, #00bdf8, #00b6f0, #00aee9, #0086d0, #005fb1, #1c378d, #2b0763);}
 
 main {    flex: 1 1 100%;
 }
