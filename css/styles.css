@@ -137,6 +137,18 @@ header h1 {
     border: 2px dotted blue;
 }
 
+.warning_header {
+    color: red;
+}
+
+.warning_text {
+    color: red;
+    margin: 5px;
+    text-align: center;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
 .description-h3 {
     text-align: center;
     color: aliceblue;
