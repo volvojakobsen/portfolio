@@ -4,268 +4,228 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andy's Portfolio</title>
     <meta
       name="description"
-      content="Andreas jakobsen's programing Portfolio, is a portfolio page for Andreas jakobsen. The portfolio displays 
-     front end developer programing projects. The languages used are: html, css and javascript."
+      content="Andreas Jakobsen's programming portfolio including front-end and fullstack projects."
     />
-    <link href="css/styles.css" rel="stylesheet" />
-    <meta name="author" content="andreas jakobsen" />
+    <meta name="author" content="Andreas Jakobsen" />
     <meta
       name="keywords"
-      content="Andreas jakobsen, programing, Portfolio, game hub, Community science museum, kåre volvo's blogg, projects, project, 
-      html, css, javascript, coding, api, front-end, developer, developing, front-end developer"
+      content="Portfolio, Frontend, Fullstack, JavaScript, React, Laravel, Vue, PHP, HTML, CSS"
     />
-    <title>Andy's Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
   </head>
-  <body>
-    <header>
-      <h1>Andreas Jakobsen's Frontend development Portfolio</h1>
-      <div>
-        <nav class="nav">
-          <ul class="nav__links">
-            <li class="active">
-              <a href="index.html"><button class="active">Home</button></a>
+
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow p-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <h1
+          class="text-2xl md:text-3xl font-bold text-center md:text-left text-gray-800 dark:text-black"
+        >
+          Andreas Jakobsen's Fullstack Development Portfolio
+        </h1>
+        <nav>
+          <ul class="flex gap-4">
+            <li>
+              <a
+                href="index.html"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="about.html"><button>About me</button></a>
+              <a
+                href="about.html"
+                class="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+                >About Me</a
+              >
             </li>
           </ul>
         </nav>
       </div>
-      <div class="header-div">
-        <p class="margin-left">link to my:</p>
+      <div class="mt-4 text-center md:text-left">
+        <p>Link to my:</p>
         <a
           href="https://github.com/volvojakobsen/volvojakobsen"
-          class="header-link"
-          ><h4>Github Profile</h4></a
+          class="text-blue-600 hover:underline text-lg"
+          >GitHub Profile</a
         >
+        <button
+          id="theme-toggle"
+          class="ml-4 mt-4 px-3 py-2 text-sm rounded bg-gray-200 dark:bg-gray-700 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600"
+        >
+          Toggle Dark Mode
+        </button>
       </div>
     </header>
-    <main>
-      <h1 class="header-h1">Projects from my first year studying</h1>
-      <div class="cards">
-        <div class="site">
-          <h2>Game hub</h2>
-          <img
-            class="screenshots"
-            src="images/gamehub.png"
-            alt="Screenshot home-page"
-          />
-          <h3 class="warning_header">Warning</h3>
-          <p class="warning_text">
-            The API's for this project have been terminated
-          </p>
-          <div class="description">
-            <h3 class="description-h3">Description</h3>
-            <p class="description-p">
-              this is the first project i started on for my studies. it was
-              mainly a html and css only project, but has been updated with
-              javascript at a later time. The site is a fictive online game
-              store, where the user can buy and sell video-games. the games are
-              fetched from a wordpress rest api using javascript.
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-10 space-y-16">
+      <!-- First Year Projects -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-6">
+          Projects from my first year studying
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Project Card -->
+          <article class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-2">Community Science Museum</h3>
+            <img
+              src="images/csm.png"
+              alt="Screenshot home-page"
+              class="rounded mb-4"
+            />
+            <p class="mb-4">
+              Semester project using HTML5 and CSS for a fictional science
+              museum.
             </p>
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">git-hub page:</h3>
-            <a
-              href="https://github.com/Noroff-FEU-Assignments/cross-course-project-volvojakobsen"
-              ><p class="description-p">
-                https://github.com/Noroff-FEU-Assignments/cross-course-project-volvojakobsen
-              </p></a
-            >
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">Netlify deployed page:</h3>
-            <a href="https://loving-edison-1c4bb8.netlify.app/index.html"
-              ><p class="link description-p">
-                https://loving-edison-1c4bb8.netlify.app/index.html
-              </p></a
-            >
-          </div>
+            <div class="space-y-2">
+              <a
+                href="https://github.com/volvojakobsen/semester-project-1"
+                class="block text-blue-600 hover:underline"
+              >
+                GitHub: semester-project-1
+              </a>
+              <a
+                href="https://fervent-bardeen-d9845a.netlify.app/"
+                class="block text-blue-600 hover:underline"
+              >
+                Live Site
+              </a>
+            </div>
+          </article>
         </div>
-        <div class="site">
-          <h2>Comunity Science Museum</h2>
-          <img
-            src="images/csm.png"
-            class="screenshots"
-            alt="Screenshot home-page"
-          />
-          <div class="description">
-            <h3 class="description-h3">Description</h3>
-            <p class="description-p">
-              This is my semester project for my first semester. it is html5 and
-              css only. it is a fictive website for a fictive science museum.
+      </section>
+
+      <!-- Second Year Projects -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-6">
+          Projects from my second year studying
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Web Shop -->
+          <article class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-2">Web Shop</h3>
+            <img
+              src="images/web-shop.png"
+              alt="Screenshot web-shop"
+              class="rounded mb-4"
+            />
+            <p class="mb-4">
+              React-based online store with search, cart, and checkout features.
             </p>
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">git-hub page:</h3>
-            <a href="https://github.com/volvojakobsen/semester-project-1">
-              <p class="description-p">
-                https://github.com/volvojakobsen/semester-project-1
-              </p></a
-            >
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">Netlify deployed page:</h3>
-            <a href="https://fervent-bardeen-d9845a.netlify.app/"
-              ><p class="description-p">
-                https://fervent-bardeen-d9845a.netlify.app/
-              </p></a
-            >
-          </div>
-        </div>
-        <div class="site">
-          <h2>Kåre volvo's blogg</h2>
-          <img
-            src="images/Kåre-volvo's-blog-Home.png"
-            class="screenshots"
-            alt="Screenshot home-page"
-          />
-          <h3 class="warning_header">Warning</h3>
-          <p class="warning_text">
-            The API's for this project have been terminated
-          </p>
-          <div class="description">
-            <h3 class="description-h3">Description</h3>
-            <p class="description-p">
-              This is a fictive blog site, about cars and car rescue. it was my
-              project exam for my first year. the posts are fetched from a
-              wordpress rest api.
+            <div class="space-y-2">
+              <a
+                href="https://github.com/volvojakobsen/javascript-frameworks-CA"
+                class="block text-blue-600 hover:underline"
+              >
+                GitHub: Web Shop
+              </a>
+              <a
+                href="https://guileless-halva-39b53c.netlify.app/"
+                class="block text-blue-600 hover:underline"
+              >
+                Live Site
+              </a>
+            </div>
+          </article>
+
+          <!-- Holidaze -->
+          <article class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-2">Holidaze</h3>
+            <img
+              src="images/holidaze.png"
+              alt="Screenshot Holidaze"
+              class="rounded mb-4"
+            />
+            <p class="mb-4">
+              A BnB-style app where users can book or manage venues with
+              role-based functionality.
             </p>
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">git-hub page:</h3>
-            <a
-              href="https://github.com/Noroff-FEU-Assignments/project-exam-1-volvojakobsen"
-              ><p class="link description-p">
-                https://github.com/Noroff-FEU-Assignments/project-exam-1-volvojakobsen
-              </p></a
-            >
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">Netlify deployed page:</h3>
-            <a href="https://silly-pithivier-902e33.netlify.app/"
-              ><p class="link description-p">
-                https://silly-pithivier-902e33.netlify.app/
-              </p></a
-            >
-          </div>
+            <div class="space-y-2">
+              <a
+                href="https://github.com/volvojakobsen/project-exam-2"
+                class="block text-blue-600 hover:underline"
+              >
+                GitHub: Holidaze
+              </a>
+              <a
+                href="https://647203305650447ba7bef467--spiffy-custard-9a216d.netlify.app/"
+                class="block text-blue-600 hover:underline"
+              >
+                Live Site
+              </a>
+            </div>
+          </article>
         </div>
-      </div>
-      <h1 class="header-h1">Projects from my second year studying</h1>
-      <div class="cards">
-        <div class="site">
-          <h2>Auction-Bay</h2>
-          <img
-            class="screenshots"
-            src="images/semester-p-2.png"
-            alt="Screenshot home-page"
-          />
-          <div class="description">
-            <h3 class="description-h3">Description</h3>
-            <p class="description-p">
-              this is a project made at the end of my 3rd semester. It is a
-              auction site where the users can register an account and get 1000
-              credits when registered. They can then use the credits to place a
-              bid on items and they can also put an item of their own up for
-              auction. The items they put up for auction can also be updated or
-              deleted.
+      </section>
+
+      <!-- Fullstack Projects -->
+      <section>
+        <h2 class="text-2xl font-semibold mb-6">
+          My Fullstack Projects (2024-2025)
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Larabook -->
+          <article class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-2">Larabook</h3>
+            <img
+              src="images/larabook.png"
+              alt="Screenshot Larabook"
+              class="rounded mb-4"
+            />
+            <p class="mb-4">
+              A Laravel + Vue3 app with user roles, venue listings, and
+              service/product management.
             </p>
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">git-hub page:</h3>
-            <a href="https://github.com/volvojakobsen/semester-project_2"
-              ><p class="description-p">
-                https://github.com/volvojakobsen/semester-project_2
-              </p></a
-            >
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">Github-pages deployed page:</h3>
-            <a
-              href="https://volvojakobsen.github.io/semester-project_2/index.html"
-              ><p class="link description-p">
-                https://volvojakobsen.github.io/semester-project_2/index.html
-              </p></a
-            >
-          </div>
+            <div class="space-y-2">
+              <a
+                href="https://github.com/volvojakobsen/larabook/tree/bookings/larabook"
+                class="block text-blue-600 hover:underline"
+              >
+                GitHub: Larabook
+              </a>
+              <p class="text-gray-500">Live site not deployed yet</p>
+            </div>
+          </article>
         </div>
-        <div class="site">
-          <h2>Web shop</h2>
-          <img
-            src="images/web-shop.png"
-            class="screenshots"
-            alt="Screenshot home-page"
-          />
-          <div class="description">
-            <h3 class="description-h3">Description</h3>
-            <p class="description-p">
-              This is my first project made in React. it is a online store where
-              the user can browse and search products and add them to cart, and
-              also do a checkout with the cart where the items will be removed
-              from cart.
-            </p>
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">git-hub page:</h3>
-            <a href="https://github.com/volvojakobsen/javascript-frameworks-CA">
-              <p class="description-p">
-                https://github.com/volvojakobsen/javascript-frameworks-CA
-              </p></a
-            >
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">Netlify deployed page:</h3>
-            <a href="https://guileless-halva-39b53c.netlify.app/"
-              ><p class="description-p">
-                https://guileless-halva-39b53c.netlify.app/
-              </p></a
-            >
-          </div>
-        </div>
-        <div class="site">
-          <h2>Holidaze</h2>
-          <img
-            src="images/holidaze.png"
-            class="screenshots"
-            alt="Screenshot home-page"
-          />
-          <div class="description">
-            <h3 class="description-h3">Description</h3>
-            <p class="description-p">
-              This is a bnb-ish site where the users can browse venues for
-              renting and staying at. On this site the users can register as
-              either a regular customer or a venue manager. Regular customers
-              can select available dates and book a stay at a venue. Venue
-              managers can rent out their venues at this site, they can also
-              update and delete their venues.
-            </p>
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">git-hub page:</h3>
-            <a href="https://github.com/volvojakobsen/project-exam-2"
-              ><p class="link description-p">
-                https://github.com/volvojakobsen/project-exam-2
-              </p></a
-            >
-          </div>
-          <div class="description links">
-            <h3 class="description-h3">Netlify deployed page:</h3>
-            <a
-              href="https://647203305650447ba7bef467--spiffy-custard-9a216d.netlify.app/"
-              ><p class="link description-p">
-                https://647203305650447ba7bef467--spiffy-custard-9a216d.netlify.app/
-              </p></a
-            >
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
-    <footer>
-      <p class="copyright">
-        Copyright © 2023 Andreas Jakobsen's Programing Portfolio
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 shadow-inner">
+      <p class="text-sm text-gray-600">
+        © 2025 Andreas Jakobsen's Programming Portfolio
       </p>
     </footer>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+
+      if (localStorage.getItem("theme") === "dark") {
+        root.classList.add("dark");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        if (root.classList.contains("dark")) {
+          root.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          root.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+    </script>
   </body>
 </html>

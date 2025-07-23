@@ -4,71 +4,128 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Andy's Portfolio</title>
+
     <meta
       name="description"
-      content="Andreas jakobsen's programing Portfolio, is a portfolio page for Andreas jakobsen. The portfolio displays 
-     front end developer programing projects. The languages used are: html, css and javascript."
+      content="About Andreas Jakobsen, a frontend developer with a passion for learning and building."
     />
-    <link href="css/styles.css" rel="stylesheet" />
-    <meta name="author" content="andreas jakobsen" />
+    <meta name="author" content="Andreas Jakobsen" />
     <meta
       name="keywords"
-      content="Andreas jakobsen, programing, Portfolio, game hub, Community science museum, kåre volvo's blogg, projects, project, 
-      html, css, javascript, coding, api, front-end, developer, developing, front-end developer"
+      content="Andreas Jakobsen, Frontend Developer, Portfolio, HTML, CSS, JavaScript, React"
     />
-    <title>Andy's Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
   </head>
-  <body>
-    <header>
-      <h1>Andreas Jakobsen's Frontend development Portfolio</h1>
-      <div>
-        <nav class="nav">
-          <ul class="nav__links">
+
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow p-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <h1
+          class="text-2xl md:text-3xl font-bold text-center md:text-left text-gray-800 dark:text-black"
+        >
+          Andreas Jakobsen's Fullstack Development Portfolio
+        </h1>
+        <nav>
+          <ul class="flex gap-4">
             <li>
-              <a href="index.html"><button>Home</button></a>
+              <a
+                href="index.html"
+                class="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="about.html"><button class="active">About me</button></a>
+              <a
+                href="about.html"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                >About Me</a
+              >
             </li>
           </ul>
         </nav>
       </div>
-      <div class="header-div">
-        <p class="margin-left">link to my:</p>
+      <div class="mt-4 text-center md:text-left">
+        <p>Link to my:</p>
         <a
           href="https://github.com/volvojakobsen/volvojakobsen"
-          class="header-link"
-          ><h4>Github Profile</h4></a
+          class="text-blue-600 hover:underline text-lg"
+          >GitHub Profile</a
         >
+        <button
+          id="theme-toggle"
+          class="ml-4 px-3 py-2 text-sm rounded bg-gray-200 dark:bg-gray-700 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600"
+        >
+          Toggle Dark Mode
+        </button>
       </div>
     </header>
-    <main>
-      <div class="about-topdiv">
-        <img
-          src="images/IMG_20230823_000717809_BURST000_COVER_AI.jpg"
-          alt="image of me"
-          class="profile-image"
-        />
-        <div class="margin">
-          <h3 class="about-header">About me</h3>
-          <p class="about-description">
-            i am now 33 years old, and have now finished a 2 year course of
-            frontend development at Noroff fagskole, and i am now looking for a
-            job as a frontend developer. I have worked most of my life as a taxi
-            driver and a car rescuer. In recent years i have been wanting to
-            start a new career, a career where i can achieve more and develop
-            skills.
-          </p>
-          <br />
-          <h3 class="about-header">Contact info:</h3>
-          <p class="about-description">volvo240jakobsen@gmail.com</p>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-12">
+      <section class="flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-shrink-0">
+          <img
+            src="images/IMG_20230823_000717809_BURST000_COVER_AI.jpg"
+            alt="Andreas Jakobsen"
+            class="w-60 h-60 object-cover rounded-full shadow-md border-4 border-white"
+          />
         </div>
-      </div>
+        <div>
+          <h2 class="text-2xl font-bold mb-4">About Me</h2>
+          <p class="mb-6 leading-relaxed">
+            I’m 35 years old and recently completed a two-year course in
+            Frontend Development at Noroff Fagskole. I'm now looking for my
+            first job in the tech industry. My professional background includes
+            working as a taxi driver and car rescuer, but in recent years I've
+            been eager to pursue a new path—one that allows me to grow, learn,
+            and create through technology. i have now also built a Php/Laravel
+            project with Vue3 frontend.
+          </p>
+
+          <h3 class="text-xl font-semibold mb-2">Contact Info</h3>
+          <p class="text-blue-600 hover:underline">
+            <a href="mailto:volvo240jakobsen@gmail.com"
+              >volvo240jakobsen@gmail.com</a
+            >
+          </p>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p class="copyright">
-        Copyright © 2023 Andreas Jakobsen's Programing Portfolio
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 shadow-inner">
+      <p class="text-sm text-gray-600">
+        © 2025 Andreas Jakobsen's Programming Portfolio
       </p>
     </footer>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+
+      if (localStorage.getItem("theme") === "dark") {
+        root.classList.add("dark");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        if (root.classList.contains("dark")) {
+          root.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          root.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+    </script>
   </body>
 </html>
